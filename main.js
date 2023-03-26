@@ -24,7 +24,7 @@ function openNav() {
   function formvalidate(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var password=document.getElementById("password").value;
+    var Telephone=document.getElementById("Telephone").value;
     var error=document.getElementById("error");
     var text="";
 
@@ -38,7 +38,7 @@ function openNav() {
         error.innerHTML=text;
         return false;
     }
-    else if(isNaN(password)){
+    else if(isNaN(Telephone)){
         text="please entre valid password";
         error.innerHTML=text;
         return false;
